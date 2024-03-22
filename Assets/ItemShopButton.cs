@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemShopButton : MonoBehaviour
+public class DreamingButton : MonoBehaviour
 {
     // Start is called before the first frame update
     public SpriteRenderer img1;
