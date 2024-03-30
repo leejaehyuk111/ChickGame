@@ -6,20 +6,20 @@ using UnityEngine.UI;
 public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    static int i;
     public SpriteRenderer curimg;
     public Sprite img1, img2;
     public void OnClickEat()
     {
-        if(i== 0)
+        curimg.sprite = img1;
+        if (ChickStatus.hungry >= 50)
         {
-            curimg.sprite = img1;
-            i++;
-        }
-        else
+            ChickStatus.hungry -= 50;
+        } else
         {
-            curimg.sprite = img2;
-            i = 0;
+            ChickStatus.hungry = 0;
         }
+
+        Invoke("", 0.5f);
+        curimg.sprite = img2;
     }
 }

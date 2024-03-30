@@ -8,12 +8,17 @@ public class Time : MonoBehaviour
 {
     public static int Hour, Minute, frame;
     [SerializeField] Text time;
-    void Update()
+    void Start()
     {
         time.text = Hour + " : " + Minute;
+    }
+    
+    void Update()
+    {
         frame+=25;
         if(frame >= 100)
         {
+            time.text = Hour + " : " + Minute;
             frame = 0;
             Minute++;
             if(Minute >= 60)
