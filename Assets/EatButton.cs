@@ -19,7 +19,12 @@ public class NewBehaviourScript : MonoBehaviour
             ChickStatus.hungry = 0;
         }
 
-        Invoke("", 0.5f);
+        StartCoroutine(Wait());
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
         curimg.sprite = img2;
     }
 }
