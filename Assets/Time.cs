@@ -15,7 +15,7 @@ public class Time : MonoBehaviour
     
     void Update()
     {
-        frame+=25;
+        frame+=2;
         if(frame >= 100)
         {
             time.text = Hour + " : " + Minute;
