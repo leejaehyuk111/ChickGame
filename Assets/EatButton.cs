@@ -10,21 +10,26 @@ public class NewBehaviourScript : MonoBehaviour
     public Sprite img1, img2;
     public void OnClickEat()
     {
-        curimg.sprite = img1;
-        if (ChickStatus.hungry >= 50)
-        {
-            ChickStatus.hungry -= 50;
-        } else
-        {
-            ChickStatus.hungry = 0;
-        }
-
+        ChickStatus.moving = 1;
+        
         StartCoroutine(Wait());
     }
 
     IEnumerator Wait()
     {
+        yield return new WaitForSeconds(0.1f);
+        curimg.sprite = img1;
+        if (ChickStatus.hungry >= 50)
+        {
+            ChickStatus.hungry -= 50;
+        }
+        else
+        {
+            ChickStatus.hungry = 0;
+        }
+
         yield return new WaitForSeconds(0.5f);
         curimg.sprite = img2;
+        ChickStatus.moving = 0;
     }
 }

@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class ChickStatus : MonoBehaviour
 {
     public static float hungry, sleep, clean, divinepower, coin, feather, hp;
-    public Slider hungry_bar, sleep_bar, clean_bar, divinepower_bar, coin_bar, feather_bar, hp_bar;
+    public Slider hungry_bar, sleep_bar, clean_bar, divinepower_bar, hp_bar;
     public SpriteRenderer img;
     public Sprite img1, img2,img3,img4,img5,img6;
     static int walk;
+    public static int moving;
 
     void Update()
     {
@@ -41,13 +42,13 @@ public class ChickStatus : MonoBehaviour
                 hp_bar.value = hp;
             }
 
-            if (walk == 0 && hungry <= 70)
+            if (walk == 0 && hungry <= 70 && moving == 0)
             {
                 walk = 1;
                 StartCoroutine(move());
                 //StopCoroutine(move());
                 
-            } else if(hungry > 70)
+            } else if(hungry > 70 && moving == 0)
             {
                 img.sprite = img6;
                 img.transform.position = new Vector3(0, -2.27f,0);
@@ -85,4 +86,5 @@ public class ChickStatus : MonoBehaviour
         yield return new WaitForSeconds(1);
         walk = 0;
     }
+
 }
