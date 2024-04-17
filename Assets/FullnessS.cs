@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HungryS : MonoBehaviour
+public class FullnessS : MonoBehaviour
 {
-    public void hungryS(Slider slider)
+    public void fullnessS(Slider slider)
     {
         
     }

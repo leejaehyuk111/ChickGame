@@ -11,13 +11,13 @@ public class SleepButton : MonoBehaviour
     {
         img.sprite = img2;
         ChickStatus.moving = 1;
-        if (ChickStatus.sleep >= 50)
+        if (ChickStatus.unsleep >= 50)
         {
-            ChickStatus.sleep -= 50;
+            ChickStatus.unsleep -= 50;
         }
         else
         {
-            ChickStatus.sleep = 0;
+            ChickStatus.unsleep = 0;
         }
 
         StartCoroutine(Wait());

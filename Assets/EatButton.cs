@@ -19,14 +19,8 @@ public class NewBehaviourScript : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         curimg.sprite = img1;
-        if (ChickStatus.hungry >= 50)
-        {
-            ChickStatus.hungry -= 50;
-        }
-        else
-        {
-            ChickStatus.hungry = 0;
-        }
+        ChickStatus.fullness += 50;
+        
 
         yield return new WaitForSeconds(0.5f);
         curimg.sprite = img2;

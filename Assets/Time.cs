@@ -6,7 +6,7 @@ using System;
 
 public class Time : MonoBehaviour
 {
-    public static int Hour, Minute, frame;
+    public static int Day = 1, Hour, Minute, frame;
     [SerializeField] Text time;
     void Start()
     {
@@ -18,7 +18,7 @@ public class Time : MonoBehaviour
         frame+=2;
         if(frame >= 100)
         {
-            time.text = Hour + " : " + Minute;
+            time.text = Day + " : " + Hour + " : " + Minute;
             frame = 0;
             Minute++;
             if(Minute >= 60)
@@ -27,7 +27,12 @@ public class Time : MonoBehaviour
                 Minute = 0;
                 if(Hour >= 24)
                 {
+                    Day++;
                     Hour = 0;
+                    if(Day >30)
+                    {
+                        Day = 1;
+                    }
                 }
             }
         }
