@@ -7,10 +7,11 @@ public class MeditationButton : MonoBehaviour
 {
     // Start is called before the first frame update
     public SpriteRenderer img1;
-    static int touch;
+    public static int touch;
 
     public void MoveBackimg2()
     {
+        
         if(touch == 0)
         {
             touch = 1;
