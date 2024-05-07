@@ -6,7 +6,7 @@ using System;
 
 public class Time : MonoBehaviour
 {
-    public static int Day = 1, Hour=9, Minute, frame;
+    public static int Day = 3, Hour=9, Minute, frame;
     [SerializeField] Text time;
     void Start()
     {
