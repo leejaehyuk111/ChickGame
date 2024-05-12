@@ -5,6 +5,8 @@ using UnityEngine;
 public class ChickFether : MonoBehaviour
 {
     int i, j, k, l, m, n;
+    public SpriteRenderer img, featherImg;
+    public Sprite img1, img2,img3;
 
     void Update()
     {
@@ -17,6 +19,8 @@ public class ChickFether : MonoBehaviour
                 if (ChickStatus.divinepower >= 10)
                 {
                     ChickStatus.feather += 1;
+                    img.sprite = img2;
+                    StartCoroutine(Waitfeather());
                 }
             }
             if (j >= 60)
@@ -25,6 +29,7 @@ public class ChickFether : MonoBehaviour
                 if (ChickStatus.divinepower >= 50)
                 {
                     ChickStatus.feather += 5;
+                    StartCoroutine(Waitfeather());
                 }
             }
             if (k >= 120)
@@ -59,6 +64,96 @@ public class ChickFether : MonoBehaviour
                     ChickStatus.feather += 300;
                 }
             }
+        }
+    }
+    IEnumerator Waitfeather()
+    {
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img3;
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img1;
+        createFeather();
+    }
+    IEnumerator feather1()
+    {
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(0.5f, -0.2f);
+        yield return new WaitForSeconds(3f);
+        featherImg.transform.position += new Vector3(-50, -50);
+    }
+    IEnumerator feather2()
+    {
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.1f, 0.4f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(0.2f);
+        featherImg.transform.position += new Vector3(-0.5f, -0.2f);
+        yield return new WaitForSeconds(3f);
+        featherImg.transform.position += new Vector3(-50, -50);
+    }
+    void createFeather()
+    {
+        
+        featherImg.transform.position = img.transform.position;
+        if (Random.Range(0,2)==0)
+        {
+            StartCoroutine(feather1());
+        } else
+        {
+            StartCoroutine(feather2());
         }
     }
 }

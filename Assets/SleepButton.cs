@@ -11,14 +11,9 @@ public class SleepButton : MonoBehaviour
     {
         img.sprite = img2;
         ChickStatus.moving = 1;
-        if (ChickStatus.unsleep >= 50)
-        {
-            ChickStatus.unsleep -= 50;
-        }
-        else
-        {
-            ChickStatus.unsleep = 0;
-        }
+
+        ChickStatus.unsleep += 50;
+        
 
         StartCoroutine(Wait());
     }
