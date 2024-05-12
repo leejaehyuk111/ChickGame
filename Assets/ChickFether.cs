@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChickFether : MonoBehaviour
 {
     int i, j, k, l, m, n;
-    public SpriteRenderer img, featherImg;
+    public SpriteRenderer img, featherImg, featherImg2, featherImg3, featherImg4, featherImg5, featherImg6;
     public Sprite img1, img2,img3;
 
     void Update()
@@ -13,7 +13,7 @@ public class ChickFether : MonoBehaviour
         if (Time.frame >= 95)
         {
             i++; j++; k++; l++; m++; n++;
-            if (i >= 30)
+            if (i >= 60)
             {
                 i = 0;
                 if (ChickStatus.divinepower >= 10)
@@ -29,7 +29,7 @@ public class ChickFether : MonoBehaviour
                 if (ChickStatus.divinepower >= 50)
                 {
                     ChickStatus.feather += 5;
-                    StartCoroutine(Waitfeather());
+                    StartCoroutine(Waitfeather2());
                 }
             }
             if (k >= 120)
@@ -38,6 +38,7 @@ public class ChickFether : MonoBehaviour
                 if (ChickStatus.divinepower >= 200)
                 {
                     ChickStatus.feather += 15;
+                    StartCoroutine(Waitfeather3());
                 }
             }
             if (l >= 240)
@@ -46,6 +47,7 @@ public class ChickFether : MonoBehaviour
                 if (ChickStatus.divinepower >= 1000)
                 {
                     ChickStatus.feather += 40;
+                    StartCoroutine(Waitfeather4());
                 }
             }
             if (m >= 480)
@@ -54,6 +56,7 @@ public class ChickFether : MonoBehaviour
                 if (ChickStatus.divinepower >= 3000)
                 {
                     ChickStatus.feather += 100;
+                    StartCoroutine(Waitfeather5());
                 }
             }
             if (n >= 960)
@@ -62,6 +65,7 @@ public class ChickFether : MonoBehaviour
                 if (ChickStatus.divinepower >= 10000)
                 {
                     ChickStatus.feather += 300;
+                    StartCoroutine(Waitfeather6());
                 }
             }
         }
@@ -74,7 +78,47 @@ public class ChickFether : MonoBehaviour
         img.sprite = img1;
         createFeather();
     }
-    IEnumerator feather1()
+    IEnumerator Waitfeather2()
+    {
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img3;
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img1;
+        createFeather2();
+    }
+    IEnumerator Waitfeather3()
+    {
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img3;
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img1;
+        createFeather3();
+    }
+    IEnumerator Waitfeather4()
+    {
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img3;
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img1;
+        createFeather4();
+    }
+    IEnumerator Waitfeather5()
+    {
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img3;
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img1;
+        createFeather5();
+    }
+    IEnumerator Waitfeather6()
+    {
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img3;
+        yield return new WaitForSeconds(0.5f);
+        img.sprite = img1;
+        createFeather6();
+    }
+    IEnumerator feather1(SpriteRenderer featherImg)
     {
         yield return new WaitForSeconds(0.2f);
         featherImg.transform.position += new Vector3(0.1f, 0.4f);
@@ -109,7 +153,7 @@ public class ChickFether : MonoBehaviour
         yield return new WaitForSeconds(3f);
         featherImg.transform.position += new Vector3(-50, -50);
     }
-    IEnumerator feather2()
+    IEnumerator feather2(SpriteRenderer featherImg)
     {
         yield return new WaitForSeconds(0.2f);
         featherImg.transform.position += new Vector3(-0.1f, 0.4f);
@@ -150,10 +194,75 @@ public class ChickFether : MonoBehaviour
         featherImg.transform.position = img.transform.position;
         if (Random.Range(0,2)==0)
         {
-            StartCoroutine(feather1());
+            StartCoroutine(feather1(featherImg));
         } else
         {
-            StartCoroutine(feather2());
+            StartCoroutine(feather2(featherImg));
+        }
+    }
+    void createFeather2()
+    {
+
+        featherImg2.transform.position = img.transform.position;
+        if (Random.Range(0, 2) == 0)
+        {
+            StartCoroutine(feather1(featherImg2));
+        }
+        else
+        {
+            StartCoroutine(feather2(featherImg2));
+        }
+    }
+    void createFeather3()
+    {
+
+        featherImg3.transform.position = img.transform.position;
+        if (Random.Range(0, 2) == 0)
+        {
+            StartCoroutine(feather1(featherImg3));
+        }
+        else
+        {
+            StartCoroutine(feather2(featherImg3));
+        }
+    }
+    void createFeather4()
+    {
+
+        featherImg4.transform.position = img.transform.position;
+        if (Random.Range(0, 2) == 0)
+        {
+            StartCoroutine(feather1(featherImg4));
+        }
+        else
+        {
+            StartCoroutine(feather2(featherImg4));
+        }
+    }
+    void createFeather5()
+    {
+
+        featherImg5.transform.position = img.transform.position;
+        if (Random.Range(0, 2) == 0)
+        {
+            StartCoroutine(feather1(featherImg5));
+        }
+        else
+        {
+            StartCoroutine(feather2(featherImg5));
+        }
+    }
+    void createFeather6()
+    {
+
+        featherImg6.transform.position = img.transform.position;
+        if (Random.Range(0, 2) == 0)
+        {
+            StartCoroutine(feather1(featherImg6));
+        }
+        else
+        {
+            StartCoroutine(feather2(featherImg6));
         }
     }
 }
