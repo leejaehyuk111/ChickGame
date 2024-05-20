@@ -13,6 +13,7 @@ public class SleepButton : MonoBehaviour
         ChickStatus.moving = 1;
 
         ChickStatus.unsleep += 50;
+        ChickStatus.hp += 5;
         
 
         StartCoroutine(Wait());

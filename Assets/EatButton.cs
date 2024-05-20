@@ -20,6 +20,8 @@ public class NewBehaviourScript : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         curimg.sprite = img1;
         ChickStatus.fullness += 50;
+        ChickStatus.hp += 5;
+
         
 
         yield return new WaitForSeconds(0.5f);

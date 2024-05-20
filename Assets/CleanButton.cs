@@ -7,21 +7,25 @@ public class CleanButton : MonoBehaviour
     // Start is called before the first frame update
     public SpriteRenderer img, bimg;
     public Sprite img1, img2, img3, img4, img5;
-    static int Cleaning;
+    public static int Cleaning;
     
     public void Clean()
     {
-        if (Cleaning == 0)
+        if (MeditationButton.touch == 0 && ItemShopButton.itemtoken == 0)
         {
-            Cleaning = 1;
-            bimg.transform.position = new Vector3(0, 0, 0);
-            StartCoroutine(clean());
-            
-        } else
-        {
-            Cleaning = 0;
-            bimg.transform.position = new Vector3(100, 100, 100);
-            img.sprite = img1;
+            if (Cleaning == 0)
+            {
+                Cleaning = 1;
+                bimg.transform.position = new Vector3(0, 2, 0);
+                StartCoroutine(clean());
+
+            }
+            else
+            {
+                Cleaning = 0;
+                bimg.transform.position = new Vector3(100, 100, 100);
+                img.sprite = img1;
+            }
         }
 
     }

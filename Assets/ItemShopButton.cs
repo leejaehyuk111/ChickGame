@@ -10,15 +10,18 @@ public class ItemShopButton : MonoBehaviour
     public static int itemtoken;
     public void MoveBackimg()
     {
-        if (itemtoken == 0)
+        if (MeditationButton.touch == 0 && CleanButton.Cleaning == 0)
         {
-            img1.transform.position = new Vector3(0, 0, 0);
-            itemtoken = 1;        
-        }
-        else
-        {
-            img1.transform.position += new Vector3(30, 0, 0);
-            itemtoken = 0;
+            if (itemtoken == 0)
+            {
+                img1.transform.position = new Vector3(0, 0, 0);
+                itemtoken = 1;
+            }
+            else
+            {
+                img1.transform.position += new Vector3(30, 0, 0);
+                itemtoken = 0;
+            }
         }
     }
 }

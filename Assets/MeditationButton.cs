@@ -11,16 +11,19 @@ public class MeditationButton : MonoBehaviour
 
     public void MoveBackimg2()
     {
-        
-        if(touch == 0)
+        if (ItemShopButton.itemtoken == 0 && CleanButton.Cleaning == 0)
         {
-            touch = 1;
-            img1.transform.position = new Vector3(0, 0, 0);
-            StartCoroutine(Wait());
-        } else
-        {
-            touch = 0;
-            img1.transform.position += new Vector3(50, 0, 0);
+            if (touch == 0)
+            {
+                touch = 1;
+                img1.transform.position = new Vector3(0, 0, 0);
+                StartCoroutine(Wait());
+            }
+            else
+            {
+                touch = 0;
+                img1.transform.position += new Vector3(50, 0, 0);
+            }
         }
         
     }
@@ -30,8 +33,11 @@ public class MeditationButton : MonoBehaviour
         while (touch == 1)
         {
             yield return new WaitForSeconds(10f);
-            ChickStatus.divinepower += ChickStatus.fullness * ChickStatus.unsleep /**ChickStatus.clean*// 100;
-            ChickStatus.hp -= ChickStatus.divinepower / 100;
+            if (ChickStatus.hp >= ChickStatus.divinepower / 100)
+            {
+                ChickStatus.divinepower += ChickStatus.fullness * ChickStatus.unsleep * ChickStatus.clean / 5000;
+                ChickStatus.hp -= ChickStatus.divinepower / 100;
+            }
         }
         
     }

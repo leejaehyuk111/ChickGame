@@ -190,13 +190,12 @@ public class ChickStatus : MonoBehaviour
                  */
             }
 
-            if (walk == 0 && fullness >= 30 && moving == 0)
+            if (walk == 0 && fullness >= 30 && moving == 0 && CleanButton.Cleaning == 0)
             {
                 walk = 1;
                 StartCoroutine(move());
-                //StopCoroutine(move());
                 
-            } else if(fullness < 30 && moving == 0)
+            } else if(fullness < 30 && moving == 0 && CleanButton.Cleaning == 0)
             {
                 img.sprite = img6;
                 img.transform.position = new Vector3(0, -2.27f,0);
