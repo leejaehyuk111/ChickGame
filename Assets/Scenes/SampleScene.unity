@@ -14474,7 +14474,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1198729619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1198729621}
+        m_TargetAssemblyTypeName: BackgroundShop, Assembly-CSharp
+        m_MethodName: ShopBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1198729619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18956,7 +18968,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1495286169}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1495286171}
+        m_TargetAssemblyTypeName: ClothShop, Assembly-CSharp
+        m_MethodName: ShopCloth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1495286169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24933,7 +24957,7 @@ RectTransform:
   m_GameObject: {fileID: 1941462775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 8, z: 1}
+  m_LocalScale: {x: 4, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1756280060}
@@ -24987,7 +25011,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1941462778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1941462780}
+        m_TargetAssemblyTypeName: JewelryShop, Assembly-CSharp
+        m_MethodName: ShopJewelry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1941462778
 MonoBehaviour:
   m_ObjectHideFlags: 0
