@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class FeatherN : MonoBehaviour
 {
-    public Text feather;
-    void numRenew()
+    public static Text feather;
+    public static void numRenew()
     {
         feather.text = ChickStatus.feather.ToString();
     }

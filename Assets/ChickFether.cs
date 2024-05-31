@@ -13,6 +13,7 @@ public class ChickFether : MonoBehaviour
         if (Time.frame >= 95)
         {
             i++; j++; k++; l++; m++; n++;
+            FeatherN.numRenew();
             if (i >= 60)
             {
                 i = 0;
