@@ -846,8 +846,9 @@ GameObject:
   - component: {fileID: 62094962}
   - component: {fileID: 62094961}
   - component: {fileID: 62094960}
+  - component: {fileID: 62094963}
   m_Layer: 5
-  m_Name: "\uAD6C\uB9E4\uBC84\uD2BC"
+  m_Name: "2_(\uC637)\uAD6C\uB9E4\uBC84\uD2BC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,7 +917,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 62094961}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 62094963}
+        m_TargetAssemblyTypeName: ClothProduct2, Assembly-CSharp
+        m_MethodName: purchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &62094961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,6 +968,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62094958}
   m_CullTransparentMesh: 1
+--- !u!114 &62094963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62094958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 099d86546d92ad8479110c6054723dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iButton: {fileID: 62094960}
 --- !u!1 &75075151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +2076,7 @@ GameObject:
   - component: {fileID: 180977927}
   - component: {fileID: 180977926}
   m_Layer: 5
-  m_Name: "5\uBC88\uC0C1\uD488"
+  m_Name: "5\uBC88\uC0C1\uD488 (\uC637)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2212,8 +2238,9 @@ GameObject:
   - component: {fileID: 184101957}
   - component: {fileID: 184101956}
   - component: {fileID: 184101955}
+  - component: {fileID: 184101958}
   m_Layer: 5
-  m_Name: "\uAD6C\uB9E4\uBC84\uD2BC"
+  m_Name: "4_(\uC637)\uAD6C\uB9E4\uBC84\uD2BC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2282,7 +2309,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 184101956}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 184101958}
+        m_TargetAssemblyTypeName: ClothProduct4, Assembly-CSharp
+        m_MethodName: purchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &184101956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,6 +2360,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184101953}
   m_CullTransparentMesh: 1
+--- !u!114 &184101958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184101953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7c98def68b5ae48ac10361aa045964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iButton: {fileID: 184101955}
 --- !u!1 &190383381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3352,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAD6C\uB9E4"
+  m_Text: "300\uAE43\uD138"
 --- !u!222 &253484253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3914,7 +3966,7 @@ GameObject:
   - component: {fileID: 281631150}
   - component: {fileID: 281631149}
   m_Layer: 5
-  m_Name: "3\uBC88\uC0C1\uD488"
+  m_Name: "3\uBC88\uC0C1\uD488 (\uC637)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4557,7 +4609,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAD6C\uB9E4"
+  m_Text: "1500\uAE43\uD138"
 --- !u!222 &340148843
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10192,8 +10244,9 @@ GameObject:
   - component: {fileID: 799278699}
   - component: {fileID: 799278698}
   - component: {fileID: 799278697}
+  - component: {fileID: 799278700}
   m_Layer: 5
-  m_Name: "\uAD6C\uB9E4\uBC84\uD2BC"
+  m_Name: "5_(\uC637) \uAD6C\uB9E4\uBC84\uD2BC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10262,7 +10315,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 799278698}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 799278700}
+        m_TargetAssemblyTypeName: ClothProduct5, Assembly-CSharp
+        m_MethodName: purchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &799278698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10301,6 +10366,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799278695}
   m_CullTransparentMesh: 1
+--- !u!114 &799278700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799278695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21294b7f909097749a4280f85269b9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iButton: {fileID: 799278697}
 --- !u!1 &800070721
 GameObject:
   m_ObjectHideFlags: 0
@@ -11142,8 +11220,9 @@ GameObject:
   - component: {fileID: 895804794}
   - component: {fileID: 895804793}
   - component: {fileID: 895804792}
+  - component: {fileID: 895804795}
   m_Layer: 5
-  m_Name: "\uAD6C\uB9E4\uBC84\uD2BC"
+  m_Name: "3_(\uC637)\uAD6C\uB9E4\uBC84\uD2BC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11212,7 +11291,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 895804793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 895804795}
+        m_TargetAssemblyTypeName: ClothProduct3, Assembly-CSharp
+        m_MethodName: purchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &895804793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11251,6 +11342,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895804790}
   m_CullTransparentMesh: 1
+--- !u!114 &895804795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895804790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72bfd2c71b936f44bebcabd8d133a0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iButton: {fileID: 895804792}
 --- !u!1 &907167599
 GameObject:
   m_ObjectHideFlags: 0
@@ -13142,8 +13246,9 @@ GameObject:
   - component: {fileID: 1073431238}
   - component: {fileID: 1073431237}
   - component: {fileID: 1073431236}
+  - component: {fileID: 1073431239}
   m_Layer: 5
-  m_Name: "\uAD6C\uB9E4\uBC84\uD2BC"
+  m_Name: "1_(\uC637) \uAD6C\uB9E4\uBC84\uD2BC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13212,7 +13317,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1073431237}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1073431239}
+        m_TargetAssemblyTypeName: ClothProduct1, Assembly-CSharp
+        m_MethodName: purchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1073431237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13251,6 +13368,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073431234}
   m_CullTransparentMesh: 1
+--- !u!114 &1073431239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073431234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93338eb544540cb468ed6d3635bc41fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iButton: {fileID: 1073431236}
 --- !u!1 &1082400768
 GameObject:
   m_ObjectHideFlags: 0
@@ -13858,7 +13988,7 @@ GameObject:
   - component: {fileID: 1140479420}
   - component: {fileID: 1140479419}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: "10\uAE43\uD138"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13916,7 +14046,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAD6C\uB9E4"
+  m_Text: "10\uAE43\uD138"
 --- !u!222 &1140479420
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14917,7 +15047,7 @@ GameObject:
   - component: {fileID: 1224051548}
   - component: {fileID: 1224051547}
   m_Layer: 5
-  m_Name: "2\uBC88\uC0C1\uD488 "
+  m_Name: "2\uBC88\uC0C1\uD488 (\uC637)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17456,7 +17586,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAD6C\uB9E4"
+  m_Text: "50\uAE43\uD138\n"
 --- !u!222 &1404325780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18500,7 +18630,7 @@ GameObject:
   - component: {fileID: 1456712669}
   - component: {fileID: 1456712668}
   m_Layer: 5
-  m_Name: "1\uBC88\uC0C1\uD488"
+  m_Name: "1\uBC88\uC0C1\uD488 (\uC637)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22773,7 +22903,7 @@ GameObject:
   - component: {fileID: 1778032469}
   - component: {fileID: 1778032468}
   m_Layer: 5
-  m_Name: "4\uBC88\uC0C1\uD488"
+  m_Name: "4\uBC88\uC0C1\uD488 (\uC637)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27530,7 +27660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAD6C\uB9E4"
+  m_Text: "5500\uAE43\uD138"
 --- !u!222 &2113107777
 CanvasRenderer:
   m_ObjectHideFlags: 0
