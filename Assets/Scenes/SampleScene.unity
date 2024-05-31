@@ -3122,12 +3122,19 @@ MonoBehaviour:
   Merchantshop1: {fileID: 224102532}
   Merchantshop2: {fileID: 0}
   Merchantshop3: {fileID: 0}
+  Merchantshop4: {fileID: 0}
+  Merchantshop5: {fileID: 0}
   Shop1Tab: {fileID: 503838282}
   Shop2Tab: {fileID: 0}
   Shop3Tab: {fileID: 0}
   Merchant1: {fileID: 379840705}
   Merchant2: {fileID: 0}
   Merchant3: {fileID: 0}
+  Quest_1_Clear: 0
+  Quest_2_Clear: 0
+  Quest_3_Clear: 0
+  Quest_4_Clear: 0
+  Quest_5_Clear: 0
 --- !u!1 &238500969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6554,12 +6561,19 @@ MonoBehaviour:
   Merchantshop1: {fileID: 480693453}
   Merchantshop2: {fileID: 0}
   Merchantshop3: {fileID: 0}
+  Merchantshop4: {fileID: 0}
+  Merchantshop5: {fileID: 0}
   Shop1Tab: {fileID: 503838282}
   Shop2Tab: {fileID: 0}
   Shop3Tab: {fileID: 0}
   Merchant1: {fileID: 1628175789}
   Merchant2: {fileID: 0}
   Merchant3: {fileID: 0}
+  Quest_1_Clear: 0
+  Quest_2_Clear: 0
+  Quest_3_Clear: 0
+  Quest_4_Clear: 0
+  Quest_5_Clear: 0
 --- !u!212 &480693453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10073,12 +10087,19 @@ MonoBehaviour:
   Merchantshop1: {fileID: 784737849}
   Merchantshop2: {fileID: 0}
   Merchantshop3: {fileID: 0}
+  Merchantshop4: {fileID: 0}
+  Merchantshop5: {fileID: 0}
   Shop1Tab: {fileID: 503838282}
   Shop2Tab: {fileID: 0}
   Shop3Tab: {fileID: 0}
   Merchant1: {fileID: 379066296}
   Merchant2: {fileID: 0}
   Merchant3: {fileID: 0}
+  Quest_1_Clear: 0
+  Quest_2_Clear: 0
+  Quest_3_Clear: 0
+  Quest_4_Clear: 0
+  Quest_5_Clear: 0
 --- !u!212 &784737849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12313,7 +12334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959505449}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.33, y: -1.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
