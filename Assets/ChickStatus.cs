@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ChickStatus : MonoBehaviour
 {
-    public static float fullness, unsleep, clean, divinepower, coin, feather, hp;
+    public static float fullness, unsleep, clean, divinepower, coin, feather=10000, hp;
     public Slider fullness_bar, unsleep_bar, clean_bar, divinepower_bar, hp_bar;
     public SpriteRenderer img, be, bs, bc, bh, bd;
     public Sprite img1, img2, img3, img4, img5, img6, be0, be1, be2, be3, be4, be5, bs0, bs1, bs2, bs3, bs4, bs5, bc0, bc1, bc2, bc3, bc4, bc5, bh0, bh1, bh2, bh3, bh4, bh5, bd0, bd1, bd2, bd3, bd4, bd5;

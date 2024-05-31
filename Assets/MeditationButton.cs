@@ -35,7 +35,7 @@ public class MeditationButton : MonoBehaviour
             yield return new WaitForSeconds(10f);
             if (ChickStatus.hp >= ChickStatus.divinepower / 100)
             {
-                ChickStatus.divinepower += ChickStatus.fullness * ChickStatus.unsleep * ChickStatus.clean / 5000;
+                ChickStatus.divinepower += ChickStatus.fullness * ChickStatus.unsleep * ChickStatus.clean * ChickStatus2.divinepowerItem/ 5000;
                 ChickStatus.hp -= ChickStatus.divinepower / 100;
             }
         }

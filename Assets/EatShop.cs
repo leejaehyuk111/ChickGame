@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EatShop : MonoBehaviour
 {
     public GameObject EatTab;
-    static int iEat;
+    public static int iEat;
     public void ShopEat()
     {
         if(ItemShopButton.itemtoken==1)
