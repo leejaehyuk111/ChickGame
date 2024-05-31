@@ -35,7 +35,8 @@ public class CleanButton : MonoBehaviour
         while (Cleaning == 1)
         {
             yield return new WaitForSeconds(0.5f);
-            ChickStatus.clean += 50;
+            ChickStatus.clean += 50*ChickStatus2.cleanItem;
+
             if (ChickStatus.clean < 1000)
             {
                 img.sprite = img2;
