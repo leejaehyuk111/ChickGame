@@ -9,13 +9,13 @@ public class Relic2Buy : MonoBehaviour
     public SpriteRenderer img, bimg;
     public void buy()
     {
-        if (ChickStatus.feather >= 100000 && i == 0)
+        if (ChickStatus.feather >= 100000 && i == 0 && ItemShopButton.itemtoken == 2)
         {
             ChickStatus2.Relic2 = 1;
             i++;
             ChickStatus.feather -= 100000;
             BuyTab.transform.position = new Vector3(0, 1100, 0);
-            img.transform.position = bimg.transform.position + new Vector3(-3, 2.5f, 0);
+            img.transform.position = bimg.transform.position + new Vector3(-3.5f, 2.5f, 0);
         }
     }
 }

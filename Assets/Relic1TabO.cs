@@ -7,6 +7,9 @@ public class Relic1TabO : MonoBehaviour
     public GameObject BuyTab;
     public void move()
     {
-        BuyTab.transform.position = new Vector3(0, 0, 0);
+        if (ItemShopButton.itemtoken == 2)
+        {
+            BuyTab.transform.position = new Vector3(0, 0, 0);
+        }
     }
 }
