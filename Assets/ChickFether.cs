@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChickFether : MonoBehaviour
 {
     int i, j, k, l, m, n;
     public SpriteRenderer img, featherImg, featherImg2, featherImg3, featherImg4, featherImg5, featherImg6;
     public Sprite img1, img2,img3;
+    public Text feather;
 
     void Update()
     {
         if (Time.frame >= 95)
         {
             i++; j++; k++; l++; m++; n++;
-            FeatherN.numRenew();
+            feather.text = ChickStatus.feather.ToString();
             if (i >= 60)
             {
                 i = 0;

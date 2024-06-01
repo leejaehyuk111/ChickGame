@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Relic : MonoBehaviour
 {
-    int Relic1, Relic2, Relic3, Relic4, Relic5;
     public SpriteRenderer bimg,bimg2;
     public GameObject relic;
     public void MoveRelic()
