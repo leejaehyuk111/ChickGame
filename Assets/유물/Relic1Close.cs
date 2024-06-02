@@ -8,6 +8,6 @@ public class Relic1Close : MonoBehaviour
 
     public void Close()
     {
-        BuyTab.transform.position = new Vector3(0, 1100, 0);
+        BuyTab.transform.position = new Vector3(0, 100, 0);
     }
 }
