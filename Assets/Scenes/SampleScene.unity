@@ -4195,7 +4195,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1883402729}
   m_Direction: 2
   m_Value: 1.0000002
-  m_Size: 0.6058305
+  m_Size: 0.60583055
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6245,7 +6245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.132, y: 1}
   m_AnchorMax: {x: 0.97200006, y: 1}
-  m_AnchoredPosition: {x: -180.19785, y: -0.000061035156}
+  m_AnchoredPosition: {x: -180.19696, y: -0.000061035156}
   m_SizeDelta: {x: 218, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &383899920
@@ -9629,8 +9629,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1116250572}
   m_HandleRect: {fileID: 1116250570}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.9928888
+  m_Value: 1.0000119
+  m_Size: 0.99288887
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -20393,7 +20393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.132, y: 1}
   m_AnchorMax: {x: 0.97200006, y: 1}
-  m_AnchoredPosition: {x: -180.19794, y: -0.000030517578}
+  m_AnchoredPosition: {x: -180.19667, y: -0.000030517578}
   m_SizeDelta: {x: 218, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1200978726
@@ -26837,7 +26837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.132, y: 1}
   m_AnchorMax: {x: 0.97200006, y: 1}
-  m_AnchoredPosition: {x: -180.19795, y: -0.000061035156}
+  m_AnchoredPosition: {x: -180.19707, y: -0.000061035156}
   m_SizeDelta: {x: 218, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1518508336
@@ -28184,7 +28184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.132, y: 1}
   m_AnchorMax: {x: 0.97200006, y: 1}
-  m_AnchoredPosition: {x: -180.1979, y: -0.00015258789}
+  m_AnchoredPosition: {x: -180.19644, y: -0.00015258789}
   m_SizeDelta: {x: 218, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1601895506
@@ -30235,8 +30235,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1467385401}
   m_HandleRect: {fileID: 1467385400}
   m_Direction: 2
-  m_Value: 0.99997616
-  m_Size: 0.9928888
+  m_Value: 1
+  m_Size: 0.99288887
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
