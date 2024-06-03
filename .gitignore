@@ -77,3 +77,6 @@ crashlytics-build.properties
         [mergetool "unityyamlmerge"]
         trustExitCode = false
         cmd = '<path to UnityYAMLMerge>' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+*.unity
+Assets/Scenes/SampleScene.unity
+/Assets/Scenes
