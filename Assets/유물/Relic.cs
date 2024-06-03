@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Relic : MonoBehaviour
 {
     public SpriteRenderer bimg,bimg2;
-    public GameObject relic, BRelic1, BRelic2, BRelic3, BRelic4, BRelic5, BuyBack;
+    public GameObject relic, BRelic1, BRelic2, BRelic3, BRelic4, BRelic5, BuyBack,BuyEat;
     public SpriteRenderer Relic1, Relic2, Relic3, Relic4, Relic5;
 
     public void MoveRelic()
@@ -23,6 +23,7 @@ public class Relic : MonoBehaviour
             BRelic4.transform.position = bimg.transform.position + new Vector3(3.5f, 3.5f, 0);
             BRelic5.transform.position = bimg.transform.position + new Vector3(6.7f, 3.5f, 0);
             BuyBack.transform.position = new Vector3(0, 100, 0);
+            BuyEat.transform.position = new Vector3(150, 0, 0);
 
 
             if (ChickStatus2.Relic1 == 1)

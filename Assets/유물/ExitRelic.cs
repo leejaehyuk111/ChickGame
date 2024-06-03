@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ExitRelic : MonoBehaviour
 {
     public SpriteRenderer bimg, bimg2;
-    public GameObject relic, BRelic1, BRelic2, BRelic3, BRelic4, BRelic5,BuyBack;
+    public GameObject relic, BRelic1, BRelic2, BRelic3, BRelic4, BRelic5,BuyBack,BuyEat;
     public SpriteRenderer Relic1, Relic2, Relic3, Relic4, Relic5;
 
     public void Exit()
@@ -28,6 +28,7 @@ public class ExitRelic : MonoBehaviour
             Relic4.transform.position = new Vector3(-100, 2.5f, 0);
             Relic5.transform.position = new Vector3(-100, 2.5f, 0);
             BuyBack.transform.position = new Vector3(4, 1, 0);
+            BuyEat.transform.position = new Vector3(-5, 4, 0);
 
         }
     }
