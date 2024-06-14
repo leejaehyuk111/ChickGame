@@ -16,7 +16,7 @@ public class CleanButton : MonoBehaviour
             if (Cleaning == 0)
             {
                 Cleaning = 1;
-                bimg.transform.position = new Vector3(0, 2, 0);
+                bimg.transform.position = new Vector3(0, 0, 0);
                 StartCoroutine(clean());
 
             }
