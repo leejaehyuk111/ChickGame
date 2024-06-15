@@ -35,7 +35,8 @@ public class CleanButton : MonoBehaviour
         while (Cleaning == 1)
         {
             yield return new WaitForSeconds(0.5f);
-            ChickStatus.clean += 50*ChickStatus2.cleanItem;
+            ChickStatus.clean += 70*ChickStatus2.cleanItem;
+            ChickStatus.hp += 7 * ChickStatus2.fullnessItem;
 
             if (ChickStatus.clean < 1000)
             {

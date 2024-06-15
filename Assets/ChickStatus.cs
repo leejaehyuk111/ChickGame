@@ -31,12 +31,12 @@ public class ChickStatus : MonoBehaviour
                 }
                 else if (fullness <= 100 * 100 * 100)
                 {
-                    fullness_bar.value = fullness / 100 * 100;
+                    fullness_bar.value = fullness / 100 / 100;
                     be.sprite = be2;
                 }
                 else if (fullness <= 100 * 100 * 100 * 100)
                 {
-                    fullness_bar.value = fullness / 100 * 100 * 100;
+                    fullness_bar.value = fullness / 100 / 100 / 100;
                     be.sprite = be3;
                 }
                 /*     else if (fullness <= 100 * 100 * 100 * 100 * 100)
@@ -71,7 +71,7 @@ public class ChickStatus : MonoBehaviour
                 }
                 else if (unsleep <= 100 * 100 * 100 * 100)
                 {
-                    unsleep_bar.value = unsleep / 100 * 100 * 100;
+                    unsleep_bar.value = unsleep / 100 / 100 / 100;
                     bs.sprite = bs3;
                 }
                 /*        else if (unsleep <= 100 * 100 * 100 * 100 * 100)
@@ -106,7 +106,7 @@ public class ChickStatus : MonoBehaviour
                 }
                 else if (clean <= 100 * 100 * 100 * 100)
                 {
-                    clean_bar.value = clean / 100 * 100 * 100;
+                    clean_bar.value = clean / 100 / 100 / 100;
                     bc.sprite = bc3;
                 }
                 /*       else if (clean <= 100 * 100 * 100 * 100 * 100)
@@ -141,7 +141,7 @@ public class ChickStatus : MonoBehaviour
                 }
                 else if (clean <= 100 * 100 * 100 * 100)
                 {
-                    divinepower_bar.value = divinepower / 100 * 100 * 100;
+                    divinepower_bar.value = divinepower / 100 / 100 / 100;
                     bd.sprite = bd3;
                 }
                 /*       else if (divinepower <= 100 * 100 * 100 * 100 * 100)
@@ -175,7 +175,7 @@ public class ChickStatus : MonoBehaviour
                 }
                 else if (hp <= 100 * 100 * 100 * 100)
                 {
-                    hp_bar.value = hp / 100 * 100 * 100;
+                    hp_bar.value = hp / 100 / 100 / 100;
                     bh.sprite = bh3;
                 }
                 /*       else if (hp <= 100 * 100 * 100 * 100 * 100)
@@ -191,12 +191,12 @@ public class ChickStatus : MonoBehaviour
                  */
             }
 
-            if (walk == 0 && fullness >= 30 && moving == 0 && CleanButton.Cleaning == 0)
+            if (walk == 0 && fullness_bar.value >= 30 && moving == 0 && CleanButton.Cleaning == 0)
             {
                 walk = 1;
                 StartCoroutine(move());
                 
-            } else if(fullness < 30 && moving == 0 && CleanButton.Cleaning == 0)
+            } else if(fullness_bar.value < 30 && moving == 0 && CleanButton.Cleaning == 0)
             {
                 img.sprite = img6;
                 img.transform.position = new Vector3(0, -2.27f,0);

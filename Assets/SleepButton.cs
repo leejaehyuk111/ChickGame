@@ -12,8 +12,8 @@ public class SleepButton : MonoBehaviour
         img.sprite = img2;
         ChickStatus.moving = 1;
 
-        ChickStatus.unsleep += 50;
-        ChickStatus.hp += 5;
+        ChickStatus.unsleep += 30 * ChickStatus2.unsleepItem;
+        ChickStatus.hp += 3 * ChickStatus2.unsleepItem;
         
 
         StartCoroutine(Wait());
